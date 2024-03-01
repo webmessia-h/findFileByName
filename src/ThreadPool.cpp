@@ -4,7 +4,7 @@ ThreadPool::ThreadPool(int numThr) : stop(false)    // create fixed quantity of 
 {
     for (int i = 0; i < numThr; i++)
     {
-        threads.emplace_back([this]    // [this] to access variables of enclosed class
+        threads.emplace_back([this]    // [this] to capture 'this' pointer of enclosed class
         {
              while (true)
              {
