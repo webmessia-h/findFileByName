@@ -1,6 +1,6 @@
 concurrent application to search file from "/" (root) by it's name
 
- but better change that in ```findByName.cpp``` **Line 30** to ```/home/username``` to avoid any unpredictable behaviour (don't forget to change ```username``` to your actual username
+ but better change that in ```findByName.cpp``` **Line 30** to ```/home/username``` to avoid any unpredictable behaviour (don't forget to change ```username``` to your actual username)
 
 execute:
 
