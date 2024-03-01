@@ -14,7 +14,7 @@ execute:
 
  ```./main``` to run search (if doesn't work execute ```sudo ./main``` instead
 
- (consider that using 'sudo' may be dangerous for your system as it gives superuser privileges to executable, but searching without sudo not yet have been implemented in this app, so you don't have a choice if you want app to run ```:)```)
+ consider that using 'sudo' may be dangerous for your system as it gives superuser privileges to executable, but searching without sudo not yet have been implemented in this app, so you don't have a choice if you want app to run :)
 
 **output would look like this:**
 ```
