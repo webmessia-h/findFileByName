@@ -1,4 +1,4 @@
-concurrent application to search file from "/" (root) by it's name 
+concurrent application to search file from "/" (root) by it's name, but better change that in ```findByName.cpp``` **Line 30** to '/home' to avoid any unpredictable behaviour
 
 execute:
 
