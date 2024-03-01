@@ -5,7 +5,6 @@ CFLAGS := -Wall -std=c++17
 # Source files
 SRCS := findByName.cpp ThreadPool.cpp
 
-
 # Object files
 OBJS := $(SRCS:.cpp=.o)
 
@@ -13,7 +12,7 @@ OBJS := $(SRCS:.cpp=.o)
 LIBNAME := search.a
 
 # Default target
-all: $(LIBNAME) main
+all: $(LIBNAME) 
 
 # Compile source files into object files
 %.o: %.cpp
