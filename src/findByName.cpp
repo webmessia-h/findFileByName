@@ -21,6 +21,7 @@ void searchInDir(const fs::path &searchPath, const std::string &filename, std::s
     catch (const std::exception &e)    // catch and wrap any errors
     {
         std::cerr << "Error - " << e.what() << std::endl;
+        std::cout << "Resuming..." << std::endl;    // so user knows that app still running and doing the search
     }
 }
 
