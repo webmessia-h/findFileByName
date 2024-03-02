@@ -1,7 +1,9 @@
 application to search file from ```"/"``` (root) by it's name in multithreading mode
 
  but better change starting directory in ```findByName.cpp``` **Line 30** to ```/home/username``` for security reasons (don't forget to change ```username``` to your actual username)
-
+ 
+ app searches specificaly for ```findMe.txt```, this can be changed to your preffered **existing** file in ```main.cpp```
+ 
 execute:
 
  ```git clone https://github.com/webmessia-h/findFileByName.git``` to clone repository
