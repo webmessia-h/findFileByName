@@ -1,6 +1,6 @@
-application to search file from "/" (root) by it's name in multithreading mode
+application to search file from ```"/"``` (root) by it's name in multithreading mode
 
- but better change that in ```findByName.cpp``` **Line 30** to ```/home/username``` to avoid any unpredictable behaviour (don't forget to change ```username``` to your actual username)
+ but better change starting directory in ```findByName.cpp``` **Line 30** to ```/home/username``` for security reasons (don't forget to change ```username``` to your actual username)
 
 execute:
 
@@ -14,9 +14,10 @@ execute:
 
  ```sudo ./main``` to launch app
 
- consider that using 'sudo' may be dangerous for your system as it gives superuser privileges to executable, but searching without sudo not yet have been implemented in this app, so you don't have a choice if you want app to run :)
+ consider that using 'sudo' may be dangerous for your system as it gives superuser privileges to executable,
+ but running app without sudo will throw a bunch of scarry errors in console log, as app won't have permissions to enter certain directories :)
 
-**output would look like this:**
+**output will look like this:**
 ```
 ╭─   ~/Path/findFileByName/src ───────────────────────────────────────────────────────────────────────────────────────────────
 ╰─ sudo ./main
