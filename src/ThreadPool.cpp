@@ -26,6 +26,16 @@ ThreadPool::ThreadPool(int numThr) : stop(false)    // create fixed quantity of 
     }
 }
 
+void ThreadPool::stopped()
+{
+    {
+        std::unique_lock<std::mutex> lock(qMutex);
+        stop = true;
+    }
+    cond.notify_all();
+    exit(0);
+}
+
 ThreadPool::~ThreadPool()    // destructor 
 {
     {
@@ -38,14 +48,4 @@ ThreadPool::~ThreadPool()    // destructor
     {
         worker.join();    
     }
-}
-
-void ThreadPool::stopped()
-{
-    {
-        std::unique_lock<std::mutex> lock(qMutex);
-        stop = true;
-    }
-    cond.notify_all();
-    exit(0);
 }
