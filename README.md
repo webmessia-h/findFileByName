@@ -1,4 +1,4 @@
-concurrent application to search file from "/" (root) by it's name
+application to search file from "/" (root) by it's name in multithreading mode
 
  but better change that in ```findByName.cpp``` **Line 30** to ```/home/username``` to avoid any unpredictable behaviour (don't forget to change ```username``` to your actual username)
 
