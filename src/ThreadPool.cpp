@@ -1,6 +1,6 @@
 #include "ThreadPool.hpp"
 
-ThreadPool::ThreadPool(int numThr) : stop(false)    // create fixed quantity of threads
+ThreadPool::ThreadPool(int numThr) : stop(false)    // create required quantity of threads
 {
     for (int i = 0; i < numThr; i++)
     {
